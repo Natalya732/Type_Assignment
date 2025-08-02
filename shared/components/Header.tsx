@@ -33,21 +33,15 @@ export function Header() {
           <div className="flex items-center space-x-4">
             <nav className="hidden md:flex items-center space-x-6">
               <a
-                href="#services"
+                href="/services"
                 className="text-sm font-medium text-muted-foreground dark:text-gray-300 hover:text-foreground dark:hover:text-white transition-colors"
               >
                 Services
               </a>
-              <a
-                href="#about"
-                className="text-sm font-medium text-muted-foreground dark:text-gray-300 hover:text-foreground dark:hover:text-white transition-colors"
-              >
+              <a className="text-sm font-medium text-muted-foreground dark:text-gray-300 hover:text-foreground dark:hover:text-white transition-colors">
                 About
               </a>
-              <a
-                href="#contact"
-                className="text-sm font-medium text-muted-foreground dark:text-gray-300 hover:text-foreground dark:hover:text-white transition-colors"
-              >
+              <a className="text-sm font-medium text-muted-foreground dark:text-gray-300 hover:text-foreground dark:hover:text-white transition-colors">
                 Contact
               </a>
             </nav>
