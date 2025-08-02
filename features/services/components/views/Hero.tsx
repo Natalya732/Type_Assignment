@@ -9,6 +9,13 @@ export function Hero() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
 
+  const scrollToServices = () => {
+    window.scrollTo({
+      top: window.innerHeight, 
+      behavior: "smooth",
+    });
+  };
+
   return (
     <section className="py-10 lg:py-20 bg-background dark:bg-gray-900 relative overflow-hidden">
       <BackgroundHeroAnimations />
@@ -54,7 +61,7 @@ export function Hero() {
           <motion.div variants={heroAnimations.itemVariants}>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
               <button className="group relative px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold text-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/25 w-full sm:w-auto">
-                <span className="relative z-10">Explore Our Services</span>
+                <span className="relative z-10" onClick={()=> scrollToServices()}>Explore Our Services</span>
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary to-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
               <button className="group px-8 py-4 border-2 border-border text-foreground rounded-full font-semibold text-lg hover:border-primary hover:text-primary transition-all duration-300 hover:scale-105 hover:bg-primary/5 w-full sm:w-auto">
