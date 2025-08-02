@@ -6,6 +6,7 @@ import { Container } from "./Container";
 import { SimpleThemeToggle } from "./ThemeToggle";
 import { TypeShiftLogo } from "./svgs";
 import { MobileMenu } from "./MobileMenu";
+import Link from "next/link";
 
 export function Header() {
   return (
@@ -22,9 +23,9 @@ export function Header() {
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
           >
-            <span className="font-semibold font-secondary text-xl">
+            <Link href="/" className="font-semibold font-secondary text-xl">
               type<i>SHIFT</i>
-            </span>
+            </Link>
 
             <TypeShiftLogo />
           </motion.div>

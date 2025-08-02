@@ -21,7 +21,7 @@ export function PillarSection() {
   const [selectedPillar, setSelectedPillar] = useState(PILLARS[0].id);
 
   return (
-    <section ref={ref} className="py-12 sm:py-16 bg-background text-foreground">
+    <section id="services" ref={ref} className="py-12 sm:py-16 bg-background text-foreground">
       <Container>
         <motion.div
           initial="initial"
