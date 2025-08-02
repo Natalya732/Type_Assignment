@@ -34,23 +34,17 @@ export default function Home() {
         </main>
         <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
           <Link
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-foreground dark:text-white"
+            className="flex items-center gap-2 text-foreground dark:text-white"
             href="/services"
           >
             Services
           </Link>
-          <Link
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-foreground dark:text-white"
-            href="/about"
-          >
+          <span className="flex items-center gap-2 text-foreground dark:text-white">
             About
-          </Link>
-          <Link
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-foreground dark:text-white"
-            href="/contact"
-          >
+          </span>
+          <span className="flex items-center gap-2 text-foreground dark:text-white">
             Contact
-          </Link>
+          </span>
         </footer>
       </div>
     </div>
